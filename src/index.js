@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Load FreeCodeCamp test bundle
+const script = document.createElement('script');
+script.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js';
+script.async = true;
+document.body.appendChild(script);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
